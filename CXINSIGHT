@@ -1,0 +1,19 @@
+wrangler.jsonc        ← Cloudflare settings
+README.md             ← setup notes for you
+public/
+  index.html          ← homepage
+  about.html
+  404.html            ← "page not found"
+  styles.css          ← colours and fonts
+  research/
+    index.html
+    article-template.html
+  projects/
+    index.html
+    teardown-template.html
+  notes/
+    index.html
+    note-template.html
+  roundup/
+    index.html
+    roundup-template.html
