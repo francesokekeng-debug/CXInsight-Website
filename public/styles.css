@@ -1,0 +1,87 @@
+/* Frances Okeke — personal site
+   Edit the colours below to restyle the whole site. */
+:root {
+  --paper: #f7f5f0;
+  --ink: #1c2321;
+  --muted: #5b6662;
+  --line: #dcd8cf;
+  --accent: #0f6b62;      /* deep teal */
+  --accent-soft: #e3efec;
+  --highlight: #c98a1b;   /* amber, used sparingly */
+  --max: 46rem;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+img { max-width: 100%; height: auto; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header .wrap {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: .5rem 1.5rem; padding-top: 1.1rem; padding-bottom: 1.1rem;
+}
+.brand { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--ink); text-decoration: none; }
+.nav { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; font-size: .95rem; }
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--highlight); }
+
+/* Type */
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); margin: 0 0 1rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 .75rem; }
+h3 { font-size: 1.15rem; margin: 0 0 .35rem; }
+.lede { font-size: 1.2rem; color: var(--muted); max-width: 38rem; }
+.eyebrow { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 .75rem; }
+
+main { padding: 3rem 0 4rem; }
+
+/* Hero */
+.hero { padding: 1rem 0 1.5rem; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+
+/* Cards / lists */
+.pillars { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); margin: 2rem 0; }
+.pillar { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1.1rem 1.2rem; }
+.pillar p { margin: 0; color: var(--muted); font-size: .97rem; }
+.pillar a { text-decoration: none; }
+
+.entries { list-style: none; padding: 0; margin: 1rem 0; border-top: 1px solid var(--line); }
+.entries li { padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.entries .meta { font-size: .85rem; color: var(--muted); margin: 0 0 .2rem; }
+.entries p { margin: .25rem 0 0; color: var(--muted); }
+.tag { display: inline-block; font-size: .75rem; font-weight: 600; padding: .1rem .5rem; border-radius: 99px; background: var(--accent-soft); color: var(--accent); margin-left: .4rem; vertical-align: middle; }
+.tag.draft { background: #f6ead3; color: #8a5a07; }
+
+.callout { background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 1rem 1.2rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
+.callout p { margin: 0; }
+
+/* Article */
+.article h1 { margin-top: .5rem; }
+.article p, .article li { max-width: 40rem; }
+.article blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--highlight); color: var(--muted); }
+.todo { background: #fff6e0; border: 1px dashed var(--highlight); padding: .15rem .4rem; border-radius: 4px; font-size: .95em; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
+.site-footer .wrap { padding-top: 1.5rem; padding-bottom: 2rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 480px) {
+  body { font-size: 1rem; }
+  main { padding-top: 2rem; }
+}

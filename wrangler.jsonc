@@ -1,0 +1,9 @@
+{
+  // Must match the Worker name you choose in the Cloudflare dashboard
+  "name": "frances-okeke-site",
+  "compatibility_date": "2026-11-07",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
