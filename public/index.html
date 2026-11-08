@@ -1,60 +1,121 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frances Okeke — Where customer journeys break</title>
-  <meta name="description" content="Frances Okeke writes about where customer journeys break, and how regulation and design fix them.">
+  <title>Frances Okeke: where customer journeys break</title>
+  <meta name="description" content="Frances Okeke investigates where customer journeys break, the rules that govern them and the design changes that fix them.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/fo-line-mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">Frances Okeke</a>
-      <nav class="nav" aria-label="Main">
-      <a href="research/index.html">Research</a>
-      <a href="projects/index.html">Projects</a>
-      <a href="notes/index.html">Notes</a>
-      <a href="roundup/index.html">Roundup</a>
-      <a href="about.html">About</a>
+      <a class="brand" href="index.html"><img src="assets/fo-line-mark.svg" alt="" width="52" height="26">Frances Okeke</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="investigations/index.html">Investigations</a></li>
+          <li><a href="field-notes/index.html">Field notes</a></li>
+          <li><a href="building.html">Building</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="cv"><a href="cv.html">CV</a></li>
+        </ul>
       </nav>
     </div>
   </header>
-  <main>
+  <main id="main">
     <div class="wrap">
 
-      <section class="hero">
-        <p class="eyebrow">Customer journeys &middot; Regulation &middot; Product design</p>
-        <h1>Where customer journeys break, and how <em>regulation and design</em> fix them.</h1>
-        <p class="lede">I study the moments customers find hardest: cancelling, complaining, switching and moving. I write about the rules that govern them, take apart journeys that fail, and share what I learn building products that fix them.</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Where customer journeys break, and how to fix them.</h1>
+        <p class="lede">I'm Frances Okeke, a product and customer experience researcher in Glasgow. I investigate the moments customers find hardest, the rules that govern them and the design changes that make them easier.</p>
+      <div class="hero-line" aria-hidden="true">
+        <svg viewBox="0 0 1000 120" preserveAspectRatio="xMinYMid meet">
+          <path class="route draw" d="M64 92 C26 92 20 30 60 28 C100 26 106 86 72 94 C56 98 92 106 142 88 C262 46 362 46 482 70 C602 94 690 94 782 72"/>
+          <line class="tick fade" x1="806" y1="50" x2="806" y2="88"/>
+          <path class="route draw" style="animation-delay:2.2s;animation-duration:.6s" d="M830 68 C870 60 900 74 930 74"/>
+          <circle class="fix fade" style="animation-delay:2.7s" cx="950" cy="74" r="12"/>
+        </svg>
+      </div>
+        <h2 class="small muted" style="font-family:var(--sans);font-weight:400;font-size:.95rem;margin:var(--space-8) 0 var(--space-4)">Four journeys I investigate</h2>
+        <ul class="journeys">
+          <li><a href="investigations/index.html#cancelling"><span class="name">Cancelling</span><span class="q">Why is it so hard to cancel?</span></a></li>
+          <li><a href="investigations/index.html#complaining"><span class="name">Complaining</span><span class="q">What makes a complaint feel heard?</span></a></li>
+          <li><a href="investigations/index.html#switching"><span class="name">Switching</span><span class="q">Why do people stay with providers they're unhappy with?</span></a></li>
+          <li><a href="investigations/index.html#moving"><span class="name">Moving home</span><span class="q">Why does a new address take a dozen separate updates?</span></a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="investigations/index.html">Read the investigations</a>
+          <a class="btn" href="cv.html">View my CV</a>
+        </div>
       </section>
 
-      <div class="pillars">
-        <div class="pillar"><h3><a href="research/index.html">Research</a></h3><p>In-depth pieces on UK consumer protection rules and what they mean for real customer journeys.</p></div>
-        <div class="pillar"><h3><a href="projects/index.html">Projects</a></h3><p>Teardowns and redesigns of journeys that frustrate customers, showing the problem and a better version.</p></div>
-        <div class="pillar"><h3><a href="notes/index.html">Notes</a></h3><p>Short write-ups of what I'm learning about product, UX and building something new.</p></div>
-        <div class="pillar"><h3><a href="roundup/index.html">Roundup</a></h3><p>A monthly pick of regulation and CX news, each with my one-line take.</p></div>
-      </div>
+      <section class="section" aria-labelledby="readers-title">
+        <h2 id="readers-title">Start where it's useful to you</h2>
+        <div class="readers">
+          <div><h3>If you're hiring</h3><p>My experience, qualifications and the way I work, on one page.</p><a href="cv.html">See my CV</a></div>
+          <div><h3>If you research or design journeys</h3><p>Questions followed through to evidence and a fix, with sources.</p><a href="investigations/index.html">Read the investigations</a></div>
+          <div><h3>If you're building something</h3><p>The ventures that grew out of this work.</p><a href="building.html">See what I'm building</a></div>
+        </div>
+      </section>
 
-      <h2>Latest</h2>
-      <ul class="entries">
-        <li>
-          <p class="meta">Research <span class="tag draft">In progress</span></p>
-          <h3>Exit friction: how hard is it to cancel a subscription?</h3>
-          <p>A look at cancellation journeys and the rules now shaping them.</p>
+      <section class="section" aria-labelledby="method-title">
+        <h2 id="method-title">How I follow a question</h2>
+        <ol class="method">
+          <li><h3>Notice</h3><p>Spot the moment a customer gets stuck.</p></li>
+          <li><h3>Investigate</h3><p>Walk the journey, count the steps and read the rules.</p></li>
+          <li><h3>Reframe</h3><p>Ask what the business and the customer each actually need.</p></li>
+          <li><h3>Fix</h3><p>Design the simpler version and say how to measure it.</p></li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="latest-title">
+        <h2 id="latest-title">Latest</h2>
+        <ul class="list">
+        <li class="item" data-topics="cancelling">
+          <div class="meta"><span class="status in-progress">In progress</span><span>Cancelling</span></div>
+          <h3><a href="investigations/exit-friction.html">Why is it so hard to cancel a subscription?</a></h3>
+          <p>Exit friction in cancellation journeys, and what the rules now expect of businesses.</p>
         </li>
-      </ul>
-      <p><a href="about.html">More about me &rarr;</a></p>
+        </ul>
+      </section>
+
+      <section class="section faq measure" aria-labelledby="faq-title">
+        <h2 id="faq-title">About this site</h2>
+        <details><summary>What is an investigation?</summary><div><p>A question about one customer journey, followed through: what happens today, what the rules say, where it breaks and what a better version looks like. Every claim is sourced.</p></div></details>
+        <details><summary>What do "In progress" and "Published" mean?</summary><div><p>"In progress" means I'm still researching or writing it, so please don't quote it yet. "Published" means it's finished and sourced.</p></div></details>
+        <details><summary>What are field notes?</summary><div><p>Shorter pieces: what I'm learning, plus a monthly roundup of regulation and customer experience news with a short note on why each item matters.</p></div></details>
+      </section>
+
+      <section class="section contact" aria-labelledby="contact-title">
+        <div class="inner">
+          <h2 id="contact-title">Is a journey breaking somewhere you work?</h2>
+          <p class="muted">I'm glad to talk about research, collaboration, roles and speaking.</p>
+          <a class="btn" href="about.html#contact">Get in touch</a>
+        </div>
+      </section>
 
     </div>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Frances Okeke &middot; Glasgow</span>
-      <span><a href="about.html#contact">Contact</a></span>
+      <p>Frances Okeke, Glasgow. Follow the question to the fix.</p>
+      <ul>
+        <li><a href="investigations/index.html">Investigations</a></li>
+        <li><a href="field-notes/index.html">Field notes</a></li>
+        <li><a href="building.html">Building</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="#main">Back to top</a></li>
+      </ul>
     </div>
   </footer>
 </body>

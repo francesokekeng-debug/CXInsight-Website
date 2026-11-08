@@ -1,51 +1,77 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Frances Okeke</title>
-  <meta name="description" content="About Frances Okeke">
+  <title>About: Frances Okeke</title>
+  <meta name="description" content="About Frances Okeke, a product and customer experience researcher in Glasgow.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/fo-line-mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">Frances Okeke</a>
-      <nav class="nav" aria-label="Main">
-      <a href="research/index.html">Research</a>
-      <a href="projects/index.html">Projects</a>
-      <a href="notes/index.html">Notes</a>
-      <a href="roundup/index.html">Roundup</a>
-      <a href="about.html" aria-current="page">About</a>
+      <a class="brand" href="index.html"><img src="assets/fo-line-mark.svg" alt="" width="52" height="26">Frances Okeke</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="investigations/index.html">Investigations</a></li>
+          <li><a href="field-notes/index.html">Field notes</a></li>
+          <li><a href="building.html">Building</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li class="cv"><a href="cv.html">CV</a></li>
+        </ul>
       </nav>
     </div>
   </header>
-  <main>
+  <main id="main">
     <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">About</li></ol></nav>
 
-      <p class="eyebrow">About</p>
-      <h1>Hi, I'm Frances.</h1>
-      <p class="lede">I'm a product and customer experience professional based in Glasgow.</p>
-      <p>I've spent more than ten years in customer experience, operations and product research across telecoms, travel and technology. That work taught me where customer journeys tend to break: cancellations, complaints, investigations and the moments when a customer just wants something sorted.</p>
-      <p>I now research how UK consumer protection rules shape those journeys, and I build products that make them easier. I'm the founder of CXInsight Ltd, where we're building <span class="todo">AxeoMove: one line on what it does</span>.</p>
-      <p>I hold a Global MBA from Glasgow Caledonian University, an MSc in Operations and Production Management, and a CSPO certification.</p>
+      <header class="page-head measure">
+        <h1>Hello, I'm Frances.</h1>
+        <p class="lede">I'm a product and customer experience researcher based in Glasgow.</p>
+      </header>
+      <div class="measure">
+        <p>I've spent more than ten years in customer experience, operations and product research across telecoms, travel and technology. That work showed me where customer journeys tend to break: cancellations, complaints and the moments when someone just wants something sorted.</p>
+        <p>Now I investigate how UK consumer protection rules shape those journeys, and I build things that make them easier. I'm the founder of CXInsight Ltd.</p>
+        <p>The line in my logo comes from uli, the line art of Igbo women, where the line leads and empty space matters as much as what is drawn. It's how I like to work: one clear line of thought, and room to think.</p>
+        <p><a href="cv.html">See my full CV</a></p>
+      </div>
 
-      <h2 id="contact">Get in touch</h2>
-      <p>For research, speaking or collaboration:</p>
-      <ul>
-        <li>Email: <span class="todo">your public email</span></li>
-        <li>LinkedIn: <span class="todo">your LinkedIn URL</span></li>
-      </ul>
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="inner">
+          <h2 id="contact-title">Get in touch</h2>
+          <p class="muted">For research, collaboration, roles or speaking.</p>
+          <div class="actions">
+            <button class="btn btn-primary" type="button" data-copy="EMAIL_ADDRESS">Copy my email address</button>
+            <a class="btn" href="LINKEDIN_URL">LinkedIn</a>
+          </div>
+          <p class="copy-status" aria-live="polite"></p>
+          <p class="small"><span class="todo">Replace EMAIL_ADDRESS and LINKEDIN_URL in build.py (About section), then run python3 build.py.</span></p>
+        </div>
+      </section>
 
     </div>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Frances Okeke &middot; Glasgow</span>
-      <span><a href="about.html#contact">Contact</a></span>
+      <p>Frances Okeke, Glasgow. Follow the question to the fix.</p>
+      <ul>
+        <li><a href="investigations/index.html">Investigations</a></li>
+        <li><a href="field-notes/index.html">Field notes</a></li>
+        <li><a href="building.html">Building</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="#main">Back to top</a></li>
+      </ul>
     </div>
   </footer>
 </body>
